@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+ body {
+ 			background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        } 
+        h3 {
+	  font-size: 1em;
+	  color: #333; /* Set your preferred text color */
+	  margin-bottom: 10px; /* Adjust as needed */
+	}
+	
+	h3 a {
+	  text-decoration: none;
+	  color: #007bff; /* Set your preferred link color */
+	}
+	
+	h3 a:hover {
+	  color: red;
+	}
+	form{
+		box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	}
+    
+    
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Register </h2>
+        <form action="register.jsp" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <input type="submit"></input>
+            <h3>Already have an Account? <a href="studentlogin.jsp">Login  here</a></h3>
+        </form>
+    </div>
+</body>
+</html>
